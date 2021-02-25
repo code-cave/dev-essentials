@@ -1,4 +1,4 @@
-## Command Line
+# Command Line
 The command line is used so much in development that it'd be near impossible  
 to be a dev without using it. From navigating the file system, running commands,  
 programs, using tools, to connecting to other machines, running scripts, etc.,  
@@ -12,7 +12,7 @@ But since they're closely related, some details regarding scripting are outlined
 - [Setting Up The Terminal](#setting-up-the-terminal)
 - [Running Commands](#running-commands)
 
-### About Shells
+## About Shells
 There are a ton of things to know about shells, the basics will be covered here.  
 The command line terminal is really just a Shell session. There are many different  
 kinds of shells (regarding Linux and Mac) such as the Z Shell (zsh), C Shell (csh),  
@@ -64,7 +64,7 @@ distributions with no complications.
 All this information about shells is **_good to know_**, but necessarily **_need to know_**.  
 Knowing it, however, probably clears up a good bit of confusion with all the terminology.  
 
-### Setting Up The Terminal
+## Setting Up The Terminal
 The first thing to do is make sure that the preferred shell is the default one.  
 
 To get what the current default shell is, run:  
@@ -103,7 +103,7 @@ Mac and open iTerm, then the .bash_profile file on your machine is executed when
 the shell session starts. If you connect to a remote Linux server, then the .bashrc  
 file on that Linux server is executed when the shell session on that server starts.  
 
-### Running Commands
+## Running Commands
 There's only one way to get better at something, and that's by doing it.  
 Learn to use the following commands:  
 - `ls` list the contents of a directory
