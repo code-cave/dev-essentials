@@ -1,0 +1,6 @@
+# Ignore stupid Mac filesystem settings files
+.DS_Store
+# Ignore stupid IDE files
+.idea
+*.iml
+
