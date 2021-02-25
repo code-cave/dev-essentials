@@ -1,11 +1,11 @@
-## Git Version Control  
+# Git Version Control  
 Learning to share code is about as important as learning how to write it.  
 It's not useful to write a whole lot of code that can't be shared or managed.  
 For that reason, learning how to use version or source control is necessary.  
 Git is the top choice for version control today, so that's what will be used.  
 Install Git if it's not already installed.  
 
-Learn the basics by practicing using the following commands:
+### Learn The Basics:
 - Initializing:  
   `$ git init` to create a Git repository under the current directory  
   It's more common to just create a repo in GitHub and clone it like below  
@@ -34,6 +34,6 @@ Learn the basics by practicing using the following commands:
   `$ git pull` to pull in (merge) the changes in the remote repository branch to the  
   checked out local branch of the same name - to get the changes someone else pushed  
 
-Of course, there are tons of other commands to do cool things in Git, but these are  
-the main commands used for doing normal everyday work.
+Of course, there are tons of other commands to do cool things in Git,  
+but these are the main commands used for doing normal everyday work.
 
