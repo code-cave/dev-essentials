@@ -3,8 +3,9 @@ Learning to share code is about as important as learning how to write it.
 It's not useful to write a whole lot of code that can't be shared or managed.  
 For that reason, learning how to use version or source control is necessary.  
 Git is the top choice for version control today, so that's what will be used.  
+Install Git if it's not already installed.  
 
-Learn the basics:
+Learn the basics by practicing using the following commands:
 - Initializing:  
   `$ git init` to create a Git repository under the current directory  
   It's more common to just create a repo in GitHub and clone it like below  
