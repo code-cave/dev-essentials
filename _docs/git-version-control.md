@@ -10,27 +10,31 @@ Install Git if it's not already installed.
   `$ git init` to create a Git repository under the current directory  
   It's more common to just create a repo in GitHub and clone it like below  
   than to do an init and set the remote repo url and push, though
-- Cloning:  
+- Clone:  
   `$ git clone https://github.com/some-org/some-repo.git` to obtain a copy of some-repo
-- Branching:  
+- Status:  
+  `$ git status` to see the status of changes
+- Log:  
+  `$ git log` to see the history of commits
+- Branch:  
   `$ git branch some-branch` to create a working branch to make code changes in
 - Checkout:  
   `$ git checkout some-branch` to checkout (switch to) the specified branch to work on  
   `$ git checkout -b some-branch` to create a branch and check it out in one command
-- Adding:  
+- Add:  
   `$ git add some-file.txt ...` to stage specific changed files, or  
   `$ git add .` to stage all changed files
-- Committing:  
+- Commit:  
   `$ git commit` (pops up text editor) to commit added files into a "saved" unit  
   in Git called a commit and provide a description message for the commit  
   `$ git commit -m "Some message"` to create a commit with a message without having  
   to go into the editor
-- Merging:  
+- Merge:  
   `$ git merge some-branch` (while on master) to merge the commits of some-branch to  
   the master (main) branch
-- Pushing:  
+- Push:  
   `$ git push` to push the current branch to the remote repository (GitHub repo)
-- Pulling:  
+- Pull:  
   `$ git pull` to pull in (merge) the changes in the remote repository branch to the  
   checked out local branch of the same name - to get the changes someone else pushed  
 
