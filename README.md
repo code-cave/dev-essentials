@@ -6,4 +6,5 @@ way for learning the essentials for mainly backend application development.
 2. [Git Version Control](./_docs/git-version-control.md)
 3. [Integrated Development Environment (IDE)](./_docs/ide.md)
 4. [Java Object Oriented Programming (OOP) Language](./_docs/java-oop-language.md)
+5. [Gradle Build Tool](./_docs/gradle-build-tool.md)
 
