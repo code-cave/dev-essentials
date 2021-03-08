@@ -56,13 +56,13 @@ Overall, use whatever flavor of shell for the local terminal, and use sh for scr
 There's a long history regarding Linux and the associated command line tools from  
 older versions of Linux. Lucky for us in today's world, all of these command line tools  
 such as `grep`, `sed`, `awk`, `cat`, and even the humble `cd` and `ls` are all included  
-in Bash and Bourne Shell distributions. All that's needed to  be known about this stuff  
-is that at one point in time, there were system specific implementations for these tools  
+in Bash and Bourne Shell distributions. All that needs to be known about this stuff is  
+that at one point in time, there were system specific implementations for these tools  
 on very old systems. In today's world, they're all available to use in the different shell  
 distributions with no complications.  
 
 All this information about shells is **_good to know_**, but necessarily **_need to know_**.  
-Knowing it, however, probably clears up a good bit of confusion with all the terminology.  
+Knowing it, however, helps clear up a good bit of confusion with all the terminology.  
 
 ## Setting Up The Terminal
 The first thing to do is make sure that the preferred shell is the default one.  
@@ -76,11 +76,9 @@ To change the default shell to Bash, run the change shell command:
 The default shell can be set to any shell that exists in the /etc/shells file.  
 If the desired shell flavor doesn't exist in /etc/shells, it must be installed.  
 
-**Highly Recommended! (For Mac)**  
-Install [iTerm](https://iterm2.com/index.html). iTerm is basically Terminal on steroids.  
-It allows you to change color schemes and allows for easier copying of output, amongst  
-many other quality of life features. Think of it as a Terminal "overlay".  
-Personalizing your shell makes it more enjoyable to use, so give it a try.  
+**Highly Recommended!**  
+Install [iTerm](https://iterm2.com/index.html) if on Mac.  
+Install [Hyper Terminal](https://hyper.is) if on Linux.
 
 **Also Highly Recommended!**  
 Modify the PS1 shell prompt variable in ~/.bash_profile to print the Git branch.  
@@ -95,13 +93,15 @@ PS1="\[\033[00m\]\n\u@\h \[\033[32m\]\w\[\033[33m\]\$(git_branch)\n\[\033[34m\]\
 It's **really handy** having the current git branch displayed when in a repository.  
 
 **What Is .bash_profile And .bashrc?**  
-The .bash_profile and .bashrc files are executed when a shell session is opened,  
-such as opening up Terminal or iTerm. The difference is that .bash_profile is  
-executed for a locally logged in user, and .bashrc is executed when connecting to  
-a remote machine, like some Linux server. For example, if you're logged in on your  
-Mac and open iTerm, then the .bash_profile file on your machine is executed when  
-the shell session starts. If you connect to a remote Linux server, then the .bashrc  
-file on that Linux server is executed when the shell session on that server starts.  
+The .bash_profile and/or .bashrc files are executed when an interactive shell session  
+is opened, such as opening up the terminal in Mac or Linux. The difference between  
+the two, is that .bash_profile is executed when the shell is an interactive login shell,  
+and .bashrc (means Bash Run Commands) is executed for interactive non login shells.  
+A good .bash_profile will source the .bashrc file so that a login shell gets the content  
+contained in both files. For example, if you open the terminal on a Mac or Linux box,  
+then the .bash_profile file on the machine is executed when the shell session starts.  
+If you run a process that creates an interactive non login shell, like vim or some other  
+text editor or interactive process, then .bashrc is sourced.
 
 ## Running Commands
 There's only one way to get better at something, and that's by doing it.  
